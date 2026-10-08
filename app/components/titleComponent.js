@@ -4,7 +4,7 @@ const Titulo = () => {
     return (
         <div>
             <h1>
-                Olá, mundo (:
+                Detalhamento dos agentes do Valorant
             </h1>
         </div>
     );
