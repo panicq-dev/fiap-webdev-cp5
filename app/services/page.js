@@ -14,9 +14,11 @@ export default function ApiRequest() {
             );
             setData(res.data.data);
         }
+
+        // Mostrar a resposta da API
         carregar();
     }, []);
-
+?
     return (
         <div>
             <AgentsList agents={data} />
