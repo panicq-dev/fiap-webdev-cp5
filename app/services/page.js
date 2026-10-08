@@ -18,7 +18,7 @@ export default function ApiRequest() {
         // Mostrar a resposta da API
         carregar();
     }, []);
-?
+
     return (
         <div>
             <AgentsList agents={data} />

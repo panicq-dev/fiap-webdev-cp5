@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams, useRouter } from 'next/navigation';
+import DescriptionAgent from '@/app/components/PhotoAgent';
 
 // Página de detalhes do Agente
 export default function DetailPage() {
@@ -25,7 +26,6 @@ export default function DetailPage() {
         carregarDetalhes();
     }, [agentId]);
 
-    // Se a resposta ainda não for puxada mostrar este texto
     if (!agent) {
         return <p>Carregando detalhes...</p>;
     }
@@ -37,15 +37,19 @@ export default function DetailPage() {
                 <button onClick={() => router.push("/")}>
                     Voltar
                 </button>
-            </div>
+            </div >
 
             {/* Detalhes sobre o agente selecionado */}
-            <div>
+            < div >
                 <h1>{agent.displayName}</h1>
                 <p>ID do Agente: {agent.uuid}</p>
+                <br></br>
+                <h2>Descrição do agente:</h2>
                 <p>Descrição: {agent.description}</p>
+                <br></br>
+                <DescriptionAgent />
                 {agent.displayIcon && <img src={agent.displayIcon} alt={agent.displayName} width={200} />}
-            </div>
-        </div>
+            </div >
+        </div >
     );
 }

@@ -13,6 +13,7 @@ export default function AgentsList({ agents }) {
                         {/* Texto do agente */}
                         <div>
                             <h2>{agent.displayName}</h2>
+                            <br/>
                         </div>
                     </Link>
                 </div>
