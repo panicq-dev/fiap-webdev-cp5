@@ -12,11 +12,13 @@ export default function AgentsList({ agents }) {
                 });
 
                 return (
-                    <Link href={`/details/${agent.uuid}?${params.toString()}`} key={agent.uuid}>
-                        <div>
-                            <h2>{agent.displayName}</h2>
-                        </div>
-                    </Link>
+                    <div className="p-4">
+                        <Link href={`/details/${agent.uuid}?${params.toString()}`} key={agent.uuid}>
+                            <div>
+                                <h2>{agent.displayName}</h2>
+                            </div>
+                        </Link>
+                    </div>
                 );
             })}
         </div>

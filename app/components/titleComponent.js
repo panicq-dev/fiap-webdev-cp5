@@ -1,11 +1,11 @@
 "use client";
 
-const Titulo = () => {
+export default function titleComponent() {
     return (
         <div>
-            <h1>
-                Detalhamento dos agentes do Valorant
-            </h1>
+            <div>
+                <h1> Lista de Agentes: </h1>
+            </div>
         </div>
     );
 }

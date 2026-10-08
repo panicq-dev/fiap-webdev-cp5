@@ -19,7 +19,7 @@ export default function ApiRequest() {
 
     return (
         <div>
-            <titleComponent />
+            <titleComponent />  
             <AgentsList agents={data} />
         </div>
     )
