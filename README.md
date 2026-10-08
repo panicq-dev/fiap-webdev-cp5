@@ -1,3 +1,11 @@
+
+
+Esse site é uma apresentação dos agentes do jogo "Valorant" da RIOT Games.
+
+Os agentes são organizados em lista, conforme o clique no nome dos agentes, o usuário é redirecionado pra outra página com suas respectivas informações (ID do Agente, Nome do Agente, Descrição do Agente e Foto do Agente), aonde existe um botão que retorna a página principal.
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

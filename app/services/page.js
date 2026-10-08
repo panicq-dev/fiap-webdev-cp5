@@ -2,7 +2,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import AgentsList from "../components/AgentsList";
-import titleComponent from "../components/TitleComponent"
+import TitleComponent from "../components/TitleComponent"
 
 export default function ApiRequest() {
     const [data, setData] = useState([]);
@@ -19,7 +19,7 @@ export default function ApiRequest() {
 
     return (
         <div>
-            <titleComponent />  
+            <TitleComponent />
             <AgentsList agents={data} />
         </div>
     )
