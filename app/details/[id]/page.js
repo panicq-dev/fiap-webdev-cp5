@@ -4,12 +4,14 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams, useRouter } from 'next/navigation';
 
+// Página de detalhes do Agente
 export default function DetailPage() {
     const params = useParams();
     const router = useRouter();
     const agentId = params?.id;
     const [agent, setAgent] = useState(null);
 
+    // Puxar a resposta da API
     useEffect(() => {
         if (!agentId) return;
 
@@ -23,6 +25,7 @@ export default function DetailPage() {
         carregarDetalhes();
     }, [agentId]);
 
+    // Se a resposta ainda não for puxada mostrar este texto
     if (!agent) {
         return <p>Carregando detalhes...</p>;
     }
@@ -30,11 +33,13 @@ export default function DetailPage() {
     return (
         <div>
             <div>
+                {/* Botão para voltar a página anterior */}
                 <button onClick={() => router.push("/")}>
                     Voltar
                 </button>
             </div>
 
+            {/* Detalhes sobre o agente selecionado */}
             <div>
                 <h1>{agent.displayName}</h1>
                 <p>ID do Agente: {agent.uuid}</p>

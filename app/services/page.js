@@ -2,11 +2,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import AgentsList from "../components/AgentsList";
-import TitleComponent from "../components/TitleComponent"
 
 export default function ApiRequest() {
     const [data, setData] = useState([]);
 
+    // Puxar a resposta da API
     useEffect(() => {
         async function carregar() {
             const res = await axios.get(
@@ -19,7 +19,6 @@ export default function ApiRequest() {
 
     return (
         <div>
-            <TitleComponent />
             <AgentsList agents={data} />
         </div>
     )
