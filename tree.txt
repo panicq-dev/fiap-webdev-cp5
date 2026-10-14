@@ -1,0 +1,33 @@
+.gitignore (480b)
+app/
+app/components/
+app/components/AgentsList.js (681b)
+app/components/BreakStyle.js (316b)
+app/components/Description.js (302b)
+app/components/Footer.js (252b)
+app/components/PhotoAgent.js (161b)
+app/components/titleComponent.js (187b)
+app/details/
+app/details/[id]/
+app/details/[id]/page.js (1621b)
+app/favicon.ico (15086b)
+app/globals.css (696b)
+app/layout.js (552b)
+app/page.js (405b)
+app/page.module.css (2612b)
+app/services/
+app/services/page.js (640b)
+eslint.config.mjs (400b)
+gitcontext.txt (1325b)
+jsconfig.json (73b)
+next.config.mjs (193b)
+package-lock.json (279696b)
+package.json (499b)
+participantes.md (122b)
+public/
+public/file.svg (391b)
+public/globe.svg (1035b)
+public/next.svg (1375b)
+public/vercel.svg (128b)
+public/window.svg (385b)
+README.md (1920b)

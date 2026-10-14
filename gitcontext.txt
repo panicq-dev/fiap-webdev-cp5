@@ -1,0 +1,42 @@
+# CONTEXTO GIT - 1ESPV/panicq-dev-fiap-webdev-cp5
+# Path: /Volumes/externo/FIAP/corretor-avaliacoes/turmas/2026/checkpoint-5/1ESPV/panicq-dev-fiap-webdev-cp5
+
+## git remote -v
+origin	https://github.com/panicq-dev/fiap-webdev-cp5 (fetch)
+origin	https://github.com/panicq-dev/fiap-webdev-cp5 (push)
+
+## git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+## git log --oneline -50 (default branch)
+43a0f3c Revise project link presentation in README
+f9484bd Fix link to the Vercel deployment
+ebc3dc9 feat: componentização
+1571a73 feat: Descrevendo funções + comentários
+536190c feat: Description Component
+8bc19e0 feat: README.md
+51b6155 fix: agent details
+1101788 feat: detail-page
+91199e1 feat: requisição get
+33afa0d Initial Create
+
+## git shortlog -sn -e (HEAD)
+8	Laboratório FIAP <labsfiap@fiap.com.br>
+     2	Gabriel Almeida <bielmdasantos@gmail.com>
+
+## git log --oneline --graph --all -20
+* 43a0f3c Revise project link presentation in README
+* f9484bd Fix link to the Vercel deployment
+* ebc3dc9 feat: componentização
+* 1571a73 feat: Descrevendo funções + comentários
+* 536190c feat: Description Component
+* 8bc19e0 feat: README.md
+* 51b6155 fix: agent details
+* 1101788 feat: detail-page
+* 91199e1 feat: requisição get
+* 33afa0d Initial Create
+
+## contagem de commits HEAD
+10
